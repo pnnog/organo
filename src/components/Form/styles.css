@@ -1,0 +1,24 @@
+.form-wrapper{
+  background-color: #F6F6F6;
+  box-shadow: 7px 7px 15px 0px #00000014;
+  padding: 33px 96px;
+  max-width: 900px;
+  width: 100%;
+  margin: 80px auto;
+  border-radius: 20px ;
+}
+
+.form-wrapper .form h2{
+  text-align: left;
+  font-size: 32px;
+  font-weight: 400;
+  color: #212121;
+  margin-bottom: 44px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
