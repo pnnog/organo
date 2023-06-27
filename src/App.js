@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Banner from './components/Banner';
+import Form from './components/Form';
+import Squad from './components/Squad';
+import squads from './squads';
+import Footer from './components/Footer';
 
 function App() {
+  const [colaborators, setColaborators] = useState([])
+
+  const updateColaborators = (data) =>{
+    setColaborators([...colaborators, data])
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Banner />
+      <Form handleSubmit={updateColaborators} squads={squads.map(squad=> squad.name)} />  
+      
+      {squads.map((squad)=>{
+
+        const currentColaborators =  colaborators.filter(colaborator => colaborator.time===squad.name)
+        
+        return(
+          <Squad 
+            key={squad.name} 
+            title={squad.name} 
+            primaryColor={squad.primaryColor} 
+            secondaryColor={squad.secondaryColor}
+            colaborators={currentColaborators}
+          />
+        )
+      })}
+
+      <Footer />
+
+    </>
+  )
 }
 
 export default App;

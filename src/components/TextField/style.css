@@ -1,0 +1,30 @@
+.textfield-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: Montserrat;
+
+}
+
+.textfield-wrapper label{
+  color: #212121;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.textfield-wrapper input{
+  background-color: #FFF;
+  height: 80px;
+  width: 100%;
+  border: 0;
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 18px 13px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.textfield-wrapper input::placeholder{
+  font-size: 16px;
+  color:#AFAFAF;
+}
