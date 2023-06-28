@@ -19,3 +19,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container{
+  width: 100%;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+

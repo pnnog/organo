@@ -1,9 +1,12 @@
 .squad-wrapper{
+  position: relative;
   width: 100%;
   padding: 3.2rem;
   min-height: 43.8rem;
   text-align: center;
 }
+
+
 
 .squad-wrapper h3{
   font-size: 3.2rem;
@@ -20,5 +23,13 @@
    align-items: center;
    justify-content: space-around;
    flex-wrap: wrap;
+}
+
+.input-color{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: 0;
+  outline: 0;
 }
 

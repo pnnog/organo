@@ -2,9 +2,9 @@
   background-color: #F6F6F6;
   box-shadow: 7px 7px 15px 0px #00000014;
   padding: 33px 96px;
-  max-width: 900px;
   width: 100%;
-  margin: 80px auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
   border-radius: 20px ;
 }
 
