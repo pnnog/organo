@@ -1,4 +1,4 @@
-### Organo: Seu organizador de times. 
+### Organo: Seu organizador de times e colaboradores. 
 
 Esta aplicação trata da criação e exposição do seu time. Pode ser usado nos mais diversos meios, como times de trablho, de estudo e até seu squad para jogos online. Adicione colaboradores, crie novos squads e veja todas essas informações exibidas de forma personalizada e customizável. 
 
